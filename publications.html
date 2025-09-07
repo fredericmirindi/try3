@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications - Frederic Mirindi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="publications2.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h2>Frederic Mirindi</h2>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#" class="nav-link" data-page="home">Home</a></li>
+                <li><a href="#" class="nav-link" data-page="research">Research</a></li>
+                <li><a href="#" class="nav-link active" data-page="publications2">Publications</a></li>
+                <li><a href="#" class="nav-link" data-page="conferences">Conferences</a></li>
+                <li><a href="#" class="nav-link" data-page="ai-implementation">AI Tools</a></li>
+                <li><a href="#" class="nav-link" data-page="about">About</a></li>
+                <li><a href="#" class="nav-link" data-page="contact">Contact</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="theme-toggle">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <button class="nav-toggle" id="nav-toggle">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="page active" id="publications2">
+            <div class="container">
+                <!-- Publications Header -->
+                <div class="publications-header">
+                    <h1>Publications</h1>
+                    <p>Peer-reviewed research contributing to AI-driven economic analysis</p>
+                </div>
+
+                <!-- Filter and Sort Controls -->
+                <div class="publications-controls">
+                    <div class="filter-section">
+                        <div class="filter-group">
+                            <label for="year-filter">Year:</label>
+                            <select id="year-filter" class="form-control filter-select">
+                                <option value="">All Years</option>
+                                <option value="2024">2024</option>
+                                <option value="2023">2023</option>
+                                <option value="2022">2022</option>
+                                <option value="2021">2021</option>
+                            </select>
+                        </div>
+
+                        <div class="filter-group">
+                            <label for="type-filter">Type:</label>
+                            <select id="type-filter" class="form-control filter-select">
+                                <option value="">All Types</option>
+                                <option value="journal">Journal</option>
+                                <option value="conference">Conference</option>
+                                <option value="preprint">Preprint</option>
+                            </select>
+                        </div>
+
+                        <div class="filter-group">
+                            <label for="category-filter">Category:</label>
+                            <select id="category-filter" class="form-control filter-select">
+                                <option value="">All Categories</option>
+                                <option value="machine-learning">Machine Learning</option>
+                                <option value="economics">Economics</option>
+                                <option value="ai-ethics">AI Ethics</option>
+                                <option value="sustainability">Sustainability</option>
+                                <option value="construction">Construction</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="view-controls">
+                        <button class="view-btn active" data-view="grid" title="Grid View">
+                            <span class="view-icon">⊞</span>
+                        </button>
+                        <button class="view-btn" data-view="list" title="List View">
+                            <span class="view-icon">☰</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Publications Grid -->
+                <div class="publications-container" id="publications-container">
+                    <!-- Publication Card 1 -->
+                    <article class="publication-card" data-year="2024" data-type="journal" data-category="machine-learning">
+                        <div class="publication-badge journal-badge">JOURNAL</div>
+                        <div class="publication-stats">
+                            <span class="stat-item">📊 45</span>
+                            <span class="stat-item">💬 12</span>
+                        </div>
+                        <div class="publication-content">
+                            <h3 class="publication-title">Forecasting Energy Prices Using Machine Learning Algorithms: A Comparative Analysis</h3>
+                            <div class="publication-authors">
+                                <span class="author">Frederic Mirindi</span>, <span class="author">John Doe</span>, <span class="author">Jane Smith</span>
+                            </div>
+                            <div class="publication-journal">Journal of Economic Forecasting</div>
+                            <div class="publication-year">2024</div>
+                            <div class="publication-abstract">
+                                This study compares various machine learning algorithms for forecasting energy prices, focusing on accuracy and computational efficiency. We analyze L...
+                            </div>
+                            <div class="publication-tags">
+                                <span class="tag">Machine Learning</span>
+                                <span class="tag">Energy Economics</span>
+                                <span class="tag">Forecasting</span>
+                                <span class="tag">Time Series</span>
+                            </div>
+                        </div>
+                        <div class="publication-actions">
+                            <button class="action-btn view-btn-pub" title="View">👁️ View</button>
+                            <button class="action-btn pdf-btn" title="PDF">📄 PDF</button>
+                            <button class="action-btn cite-btn" title="Cite">📝 Cite</button>
+                            <button class="action-btn share-btn" title="Share">🔗 Share</button>
+                        </div>
+                    </article>
+
+                    <!-- Publication Card 2 -->
+                    <article class="publication-card" data-year="2024" data-type="conference" data-category="ai-ethics">
+                        <div class="publication-badge conference-badge">CONFERENCE</div>
+                        <div class="publication-stats">
+                            <span class="stat-item">📊 28</span>
+                            <span class="stat-item">💬 8</span>
+                        </div>
+                        <div class="publication-content">
+                            <h3 class="publication-title">Advance Toward Artificial Superintelligence with OpenAI's O1 Reinforcement Learning and Ethics</h3>
+                            <div class="publication-authors">
+                                <span class="author">Frederic Mirindi</span>, <span class="author">AI Research Consortium</span>
+                            </div>
+                            <div class="publication-journal">AI Ethics and Society Conference</div>
+                            <div class="publication-year">2024</div>
+                            <div class="publication-abstract">
+                                An examination of ethical considerations in the development of artificial superintelligence, with particular focus on reinforcement learning methodologies and their societal implications.
+                            </div>
+                            <div class="publication-tags">
+                                <span class="tag">AI Ethics</span>
+                                <span class="tag">Superintelligence</span>
+                                <span class="tag">Reinforcement Learning</span>
+                                <span class="tag">Policy</span>
+                            </div>
+                        </div>
+                        <div class="publication-actions">
+                            <button class="action-btn view-btn-pub" title="View">👁️ View</button>
+                            <button class="action-btn pdf-btn" title="PDF">📄 PDF</button>
+                            <button class="action-btn cite-btn" title="Cite">📝 Cite</button>
+                            <button class="action-btn share-btn" title="Share">🔗 Share</button>
+                        </div>
+                    </article>
+
+                    <!-- Publication Card 3 -->
+                    <article class="publication-card" data-year="2023" data-type="journal" data-category="sustainability">
+                        <div class="publication-badge journal-badge">JOURNAL</div>
+                        <div class="publication-stats">
+                            <span class="stat-item">📊 67</span>
+                            <span class="stat-item">💬 15</span>
+                        </div>
+                        <div class="publication-content">
+                            <h3 class="publication-title">Neural Networks for Predicting Market Trends in Sustainable Industries</h3>
+                            <div class="publication-authors">
+                                <span class="author">Frederic Mirindi</span>, <span class="author">Environmental Economics Team</span>
+                            </div>
+                            <div class="publication-journal">Sustainable Economics Review</div>
+                            <div class="publication-year">2023</div>
+                            <div class="publication-abstract">
+                                We develop and evaluate neural network architectures for predicting market trends in sustainable industries, contributing to better investment decisio...
+                            </div>
+                            <div class="publication-tags">
+                                <span class="tag">Neural Networks</span>
+                                <span class="tag">Sustainability</span>
+                                <span class="tag">Market Analysis</span>
+                                <span class="tag">Green Finance</span>
+                            </div>
+                        </div>
+                        <div class="publication-actions">
+                            <button class="action-btn view-btn-pub" title="View">👁️ View</button>
+                            <button class="action-btn pdf-btn" title="PDF">📄 PDF</button>
+                            <button class="action-btn cite-btn" title="Cite">📝 Cite</button>
+                            <button class="action-btn share-btn" title="Share">🔗 Share</button>
+                        </div>
+                    </article>
+
+                    <!-- Publication Card 4 -->
+                    <article class="publication-card" data-year="2023" data-type="journal" data-category="construction">
+                        <div class="publication-badge journal-badge">JOURNAL</div>
+                        <div class="publication-stats">
+                            <span class="stat-item">📊 32</span>
+                            <span class="stat-item">💬 6</span>
+                        </div>
+                        <div class="publication-content">
+                            <h3 class="publication-title">BIM-Driven Offsite Construction: Pathway to Efficiency, Functionality and Sustainability</h3>
+                            <div class="publication-authors">
+                                <span class="author">Frederic Mirindi</span>, <span class="author">Construction Innovation Lab</span>
+                            </div>
+                            <div class="publication-journal">Construction Technology International</div>
+                            <div class="publication-year">2023</div>
+                            <div class="publication-abstract">
+                                This research explores how Building Information Modeling (BIM) can revolutionize offsite construction processes, leading to improved efficiency and su...
+                            </div>
+                            <div class="publication-tags">
+                                <span class="tag">BIM</span>
+                                <span class="tag">Construction Technology</span>
+                                <span class="tag">Sustainability</span>
+                                <span class="tag">Innovation</span>
+                            </div>
+                        </div>
+                        <div class="publication-actions">
+                            <button class="action-btn view-btn-pub" title="View">👁️ View</button>
+                            <button class="action-btn pdf-btn" title="PDF">📄 PDF</button>
+                            <button class="action-btn cite-btn" title="Cite">📝 Cite</button>
+                            <button class="action-btn share-btn" title="Share">🔗 Share</button>
+                        </div>
+                    </article>
+
+                    <!-- Publication Card 5 -->
+                    <article class="publication-card" data-year="2023" data-type="preprint" data-category="machine-learning">
+                        <div class="publication-badge preprint-badge">PREPRINT</div>
+                        <div class="publication-stats">
+                            <span class="stat-item">📊 18</span>
+                            <span class="stat-item">💬 4</span>
+                        </div>
+                        <div class="publication-content">
+                            <h3 class="publication-title">Ensemble machine learning algorithms for efficient prediction of compressive strength of concrete</h3>
+                            <div class="publication-authors">
+                                <span class="author">Frederic Mirindi</span>, <span class="author">Materials Research Group</span>
+                            </div>
+                            <div class="publication-journal">ArXiv Preprint</div>
+                            <div class="publication-year">2023</div>
+                            <div class="publication-abstract">
+                                This study presents ensemble machine learning approaches for predicting the compressive strength of concrete containing tyre rubber and brick powder...
+                            </div>
+                            <div class="publication-tags">
+                                <span class="tag">Ensemble Learning</span>
+                                <span class="tag">Materials Science</span>
+                                <span class="tag">Concrete</span>
+                                <span class="tag">Predictive Modeling</span>
+                            </div>
+                        </div>
+                        <div class="publication-actions">
+                            <button class="action-btn view-btn-pub" title="View">👁️ View</button>
+                            <button class="action-btn pdf-btn" title="PDF">📄 PDF</button>
+                            <button class="action-btn cite-btn" title="Cite">📝 Cite</button>
+                            <button class="action-btn share-btn" title="Share">🔗 Share</button>
+                        </div>
+                    </article>
+
+                    <!-- Publication Card 6 -->
+                    <article class="publication-card" data-year="2022" data-type="journal" data-category="ai-ethics">
+                        <div class="publication-badge journal-badge">JOURNAL</div>
+                        <div class="publication-stats">
+                            <span class="stat-item">📊 52</span>
+                            <span class="stat-item">💬 11</span>
+                        </div>
+                        <div class="publication-content">
+                            <h3 class="publication-title">An Advance Review of Urban-AI and Ethical Considerations</h3>
+                            <div class="publication-authors">
+                                <span class="author">Frederic Mirindi</span>, <span class="author">Urban Planning Institute</span>
+                            </div>
+                            <div class="publication-journal">Journal of Urban Technology</div>
+                            <div class="publication-year">2022</div>
+                            <div class="publication-abstract">
+                                A comprehensive review of artificial intelligence applications in urban planning and development, with special attention to ethical implications and soc...
+                            </div>
+                            <div class="publication-tags">
+                                <span class="tag">Urban AI</span>
+                                <span class="tag">Ethics</span>
+                                <span class="tag">Smart Cities</span>
+                                <span class="tag">Policy Review</span>
+                            </div>
+                        </div>
+                        <div class="publication-actions">
+                            <button class="action-btn view-btn-pub" title="View">👁️ View</button>
+                            <button class="action-btn pdf-btn" title="PDF">📄 PDF</button>
+                            <button class="action-btn cite-btn" title="Cite">📝 Cite</button>
+                            <button class="action-btn share-btn" title="Share">🔗 Share</button>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Pagination -->
+                <div class="pagination-container">
+                    <nav class="pagination" role="navigation" aria-label="Pagination Navigation">
+                        <button class="pagination-btn prev-btn" disabled>← Previous</button>
+                        <div class="pagination-numbers">
+                            <button class="pagination-number active">1</button>
+                            <button class="pagination-number">2</button>
+                            <button class="pagination-number">3</button>
+                            <span class="pagination-ellipsis">...</span>
+                            <button class="pagination-number">8</button>
+                        </div>
+                        <button class="pagination-btn next-btn">Next →</button>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+    <script src="publications2.js"></script>
+</body>
+</html>
